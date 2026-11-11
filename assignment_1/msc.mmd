@@ -1,0 +1,8 @@
+sequenceDiagram
+
+    Client->>Server: Static page request
+    Server->>Client: HTML
+    loop each user action
+    Client->>Server: Dynamic content request (AJAX)
+    Server->>Client: JSON
+    Client->>Client: Render JSON content as HTML within DOM
