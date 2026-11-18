@@ -1,4 +1,4 @@
-## COMP1101 Programming (Black) Summative Assessment 1
+## COMP1101 Programming (Black) Summative Assessment 1 (DRAFT)
 
 
 ## Term 1 Programming Exercise Outline
@@ -21,7 +21,6 @@
 
 - Building collections of data within a program and using JavaScript Object Notation (JSON)
 - Making programs robust through the use of exceptions and exception handling
-- A knowledge and understanding of good programming practice (for example, reuse, documentation and style)
 
 
 ### Subject-Specific Skills
@@ -42,7 +41,7 @@
 
 - Construct a dynamic web site for an application of your choosing
 - Use static HTML pages loading dynamic JSON content from server via AJAX
-- Server written in nodejs to provide JSON through REST API
+- Server written in Node.js to provide JSON through REST API
 - Prepare a 2 minute video demonstrating your code
 - Do a code quality review of four other submissions
 
@@ -66,7 +65,7 @@
 - Should provide clean and simple User Experience (UX)
 - Should be responsive i.e. work well on desktop and mobile
 - Recommend using front-end framework such as Bootstrap, Foundation
-- DO NOT use non-standard language extensions e.g. React, TypeScript
+- Use standard HTML, CSS and JavaScript. Non-standard frameworks or languages that replace them, such as React or TypeScript, must not be used
 
 
 #### Message sequence chart
@@ -88,58 +87,44 @@ Each entity type (e.g. picture) has
 
 
 - Response provided as JSON
-- Content-type needs to be correct
-- HTTP codes should be correct: use 200, 400 or 403 (if using authentication)
+- Content-Type needs to be correct
+- HTTP codes should be appropriate e.g. 200, 400, 401, 403, 404 
 
 
-### Server written in nodejs
+### Server written in Node.js
 
-- Use npm for management
-- Make sure you use --save or --save-dev option with packages you add
-- Write jest test cases: run with `npm test`
-- Recommend using express
-
-
-## Submission
-
-Source code (all zipped)
-
-- HTML and CSS and any media
-- Client and server side JavaScript
-- package.json including test and pretest scripts
-- jest test cases e.g. app.test.js
-- documentation of API
-- demonstration video 
-
-Should not include `node_modules` in submission
+- Use npm to manage all dependencies, with runtime and development dependencies correctly recorded in package.json
+- Write Jest test cases: run with `npm test`
+- Recommend using Express
 
 
 ## Assessment Criteria
 
-Equally weighted 9% each
+Total of 50 marks
 
-- Client-side functionality
-- Client-side quality
-- Server-side functionality
-- Server-side quality
-- Video presentation
+- Client-side functionality (9 marks)
+- Client-side quality (9 marks)
+- Server-side functionality (9 marks)
+- Server-side quality (9 marks)
+- Video presentation (9 marks)
+- Completion of peer reviews (5 marks)
 
 
 ### Client-side functionality criteria
 
 - User Experience (UX): clean layout and minimal clicks/entry required
-- App complexity: entities can be listed and edited
+- App complexity: entities can be listed, viewed and added
 - 'Single page' style: asynchronous updates
 - Staff reviewed
 
 
 ### Client-side quality criteria
 
-- Standards compliant (HTML5, JavaScript not React)
+- Standards compliant (HTML5, CSS and standard JavaScript)
 - Responsive to different viewport sizes
 - Gracefully handles server disconnection
   - useful error messages
-  - recommences on server restart
+  - recovers on server restart
 - Peer reviewed; staff moderated
 
 
@@ -154,8 +139,8 @@ Equally weighted 9% each
 
 ### Server-side quality criteria
 
-- Successful jest tests with good coverage (run with `npm test`)
-- Testing includes content-type and HTTP code
+- Successful Jest tests with good coverage (run with `npm test`)
+- Testing includes Content-Type and HTTP code
 - Completeness of API documentation 
 - Peer reviewed; staff moderated
 
@@ -168,13 +153,13 @@ Equally weighted 9% each
 - If it is not demonstrated in the video, you will not get a mark for it
 - Quality of video presentation will be marked separately from functionality:
   - Structure; Visual Presentation; Audio explanation
-- Lose 10% of marks for every 10 seconds over 2 minutes
+- Lose 10% of presentation marks for every 10 seconds over 2 minutes
 - Staff reviewed
 
 
 ## Peer Review Marking
 
-5% of the module marks are awarded for peer reviews
+5 marks are awarded for peer reviews
 
 * Completion of all reviews on time
 * Professional and helpful reviews

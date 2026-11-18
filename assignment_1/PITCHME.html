@@ -39,10 +39,10 @@
     <div class="slides">
 
 
-<section id="comp1101-programming-black-summative-assessment-1"
+<section id="comp1101-programming-black-summative-assessment-1-draft"
 class="slide level2" data-background-color="#7E317B">
 <h2 data-background-color="#7E317B">COMP1101 Programming (Black)
-Summative Assessment 1</h2>
+Summative Assessment 1 (DRAFT)</h2>
 </section>
 <section id="term-1-programming-exercise-outline" class="slide level2">
 <h2>Term 1 Programming Exercise Outline</h2>
@@ -75,8 +75,6 @@ example, reuse, documentation and style)</li>
 Object Notation (JSON)</li>
 <li>Making programs robust through the use of exceptions and exception
 handling</li>
-<li>A knowledge and understanding of good programming practice (for
-example, reuse, documentation and style)</li>
 </ul>
 </section>
 <section class="slide level2">
@@ -106,7 +104,7 @@ modelling</li>
 choosing</li>
 <li>Use static HTML pages loading dynamic JSON content from server via
 AJAX</li>
-<li>Server written in nodejs to provide JSON through REST API</li>
+<li>Server written in Node.js to provide JSON through REST API</li>
 <li>Prepare a 2 minute video demonstrating your code</li>
 <li>Do a code quality review of four other submissions</li>
 </ul>
@@ -139,8 +137,9 @@ AJAX</h3>
 <li>Should be responsive i.e. work well on desktop and mobile</li>
 <li>Recommend using front-end framework such as Bootstrap,
 Foundation</li>
-<li>DO NOT use non-standard language extensions e.g. React,
-TypeScript</li>
+<li>Use standard HTML, CSS and JavaScript. Non-standard frameworks or
+languages that replace them, such as React or TypeScript, must not be
+used</li>
 </ul>
 </section>
 <section class="slide level2">
@@ -175,44 +174,30 @@ good API docs</a></li>
 
 <ul>
 <li>Response provided as JSON</li>
-<li>Content-type needs to be correct</li>
-<li>HTTP codes should be correct: use 200, 400 or 403 (if using
-authentication)</li>
+<li>Content-Type needs to be correct</li>
+<li>HTTP codes should be appropriate e.g. 200, 400, 401, 403, 404</li>
 </ul>
 </section>
 <section class="slide level2">
 
-<h3 id="server-written-in-nodejs">Server written in nodejs</h3>
+<h3 id="server-written-in-node.js">Server written in Node.js</h3>
 <ul>
-<li>Use npm for management</li>
-<li>Make sure you use –save or –save-dev option with packages you
-add</li>
-<li>Write jest test cases: run with <code>npm test</code></li>
-<li>Recommend using express</li>
+<li>Use npm to manage all dependencies, with runtime and development
+dependencies correctly recorded in package.json</li>
+<li>Write Jest test cases: run with <code>npm test</code></li>
+<li>Recommend using Express</li>
 </ul>
-</section>
-<section id="submission" class="slide level2">
-<h2>Submission</h2>
-<p>Source code (all zipped)</p>
-<ul>
-<li>HTML and CSS and any media</li>
-<li>Client and server side JavaScript</li>
-<li>package.json including test and pretest scripts</li>
-<li>jest test cases e.g. app.test.js</li>
-<li>documentation of API</li>
-<li>demonstration video</li>
-</ul>
-<p>Should not include <code>node_modules</code> in submission</p>
 </section>
 <section id="assessment-criteria" class="slide level2">
 <h2>Assessment Criteria</h2>
-<p>Equally weighted 9% each</p>
+<p>Total of 50 marks</p>
 <ul>
-<li>Client-side functionality</li>
-<li>Client-side quality</li>
-<li>Server-side functionality</li>
-<li>Server-side quality</li>
-<li>Video presentation</li>
+<li>Client-side functionality (9 marks)</li>
+<li>Client-side quality (9 marks)</li>
+<li>Server-side functionality (9 marks)</li>
+<li>Server-side quality (9 marks)</li>
+<li>Video presentation (9 marks)</li>
+<li>Completion of peer reviews (5 marks)</li>
 </ul>
 </section>
 <section class="slide level2">
@@ -222,7 +207,7 @@ criteria</h3>
 <ul>
 <li>User Experience (UX): clean layout and minimal clicks/entry
 required</li>
-<li>App complexity: entities can be listed and edited</li>
+<li>App complexity: entities can be listed, viewed and added</li>
 <li>‘Single page’ style: asynchronous updates</li>
 <li>Staff reviewed</li>
 </ul>
@@ -231,12 +216,12 @@ required</li>
 
 <h3 id="client-side-quality-criteria">Client-side quality criteria</h3>
 <ul>
-<li>Standards compliant (HTML5, JavaScript not React)</li>
+<li>Standards compliant (HTML5, CSS and standard JavaScript)</li>
 <li>Responsive to different viewport sizes</li>
 <li>Gracefully handles server disconnection
 <ul>
 <li>useful error messages</li>
-<li>recommences on server restart</li>
+<li>recovers on server restart</li>
 </ul></li>
 <li>Peer reviewed; staff moderated</li>
 </ul>
@@ -257,9 +242,9 @@ criteria</h3>
 
 <h3 id="server-side-quality-criteria">Server-side quality criteria</h3>
 <ul>
-<li>Successful jest tests with good coverage (run with
+<li>Successful Jest tests with good coverage (run with
 <code>npm test</code>)</li>
-<li>Testing includes content-type and HTTP code</li>
+<li>Testing includes Content-Type and HTTP code</li>
 <li>Completeness of API documentation</li>
 <li>Peer reviewed; staff moderated</li>
 </ul>
@@ -278,13 +263,14 @@ functionality:
 <ul>
 <li>Structure; Visual Presentation; Audio explanation</li>
 </ul></li>
-<li>Lose 10% of marks for every 10 seconds over 2 minutes</li>
+<li>Lose 10% of presentation marks for every 10 seconds over 2
+minutes</li>
 <li>Staff reviewed</li>
 </ul>
 </section>
 <section id="peer-review-marking" class="slide level2">
 <h2>Peer Review Marking</h2>
-<p>5% of the module marks are awarded for peer reviews</p>
+<p>5 marks are awarded for peer reviews</p>
 <ul>
 <li>Completion of all reviews on time</li>
 <li>Professional and helpful reviews</li>
