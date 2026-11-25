@@ -15,10 +15,26 @@ app.get('/', function(req, resp){
 
 app.get("/musicals/list", function(req,resp){
   let titles = []
-  for (let musical in musicals){
+  for (let musical of musicals){
     titles.push(musical.title)
   }
   resp.send(titles)
+})
+
+app.get("/musicals/search", function(req,resp){
+  let term = req.query.search_term.toLowerCase()
+  let titles = []
+  for (let musical of musicals){
+    if(musical.title.toLowerCase().includes(term)){
+      titles.push(musical.title)
+    }
+  }
+  resp.send(titles)
+})
+
+app.get("/musical/:id", function(req,resp){
+  let id = req.params.id
+  resp.send(musicals[id])
 })
 
 app.listen(8090)
