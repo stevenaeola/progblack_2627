@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 
+app.use(express.static("client"))
+
 const musicals = 
 [{length: 150, title:"Chicago"},
   {length: 165, title: "Hamilton"},
